@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-own{
+    background: #DED8CB;
+}
+
+.main-color{
+    color: #15857A;
+}
+
+.accent-color{
+    color: #C9654D;
+}
+
+.h1-own{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Stardos Stencil, sans-serif;
+    color: #303030;
+    letter-spacing: 7px;
+    line-height: 1.1;
+}
+
+.h2-own{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: BioRhyme Expanded , sans-serif;
+    text-transform: uppercase;
+    color: #303030;
+    letter-spacing: 4px;
+}
+
+.h3-own{
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: Archivo , sans-serif;
+    text-transform: uppercase;
+    color: #303030;
+    letter-spacing: 2px;
+}
+
+.h4-own{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Archivo , sans-serif;
+    color: #303030;
+    letter-spacing: 2px;
+}
+
+.p-own{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: Archivo , sans-serif;
+    color: #303030;
+}
+
+.border-color-own{
+    border-color: #15857A;
+}
+
+.shadow-own{
+    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(169 124 80 / 0.15));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+    var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "main main navbar"
+    "main main navbar";
+}
+.main { grid-area: main; }
+.navbar { grid-area: navbar; }
+
+.negative-m{
+    margin-right: -232px;
+    margin-top: 18px;
+}
+
+.div-rounded-own{
+    border-radius: 30px;
+    background: #C9654D;
+    width: 250px;
+    height: 350px;
+}
+
+
