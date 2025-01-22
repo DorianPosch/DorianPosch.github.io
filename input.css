@@ -55,7 +55,7 @@
 }
 
 .p-own{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: lighter;
     font-family: Archivo , sans-serif;
     color: #303030;
@@ -103,22 +103,24 @@
 .hidden-own {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
 }
 
 .visible-own {
     max-height: 500px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in;
+    transition: max-height 0.4s ease-in;
+}
+
+.button {
+    transition: transform 0.38s ease-in-out;
 }
 
 .rotate-own {
     transform: rotate(90deg);
-    transition: transform 0.3s ease-in-out;
 }
 
 .reset-rotate-owm{
     transform: rotate(0deg);
     transition: transform 0.3s ease-in-out;
 }
-

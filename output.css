@@ -596,12 +596,20 @@ video {
   z-index: 10;
 }
 
-.-mt-12 {
-  margin-top: -3rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .ml-12 {
@@ -664,16 +672,8 @@ video {
   margin-top: 5rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
 }
 
 .flex {
@@ -688,8 +688,16 @@ video {
   min-width: 24rem;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -702,10 +710,6 @@ video {
 
 .border-l-4 {
   border-left-width: 4px;
-}
-
-.border-t-2 {
-  border-top-width: 2px;
 }
 
 .object-cover {
@@ -734,16 +738,6 @@ video {
 .drop-shadow-lg {
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bg-own{
@@ -798,7 +792,7 @@ video {
 }
 
 .p-own{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: lighter;
   font-family: Archivo , sans-serif;
   color: #303030;
@@ -852,18 +846,21 @@ video {
 .hidden-own {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 .visible-own {
   max-height: 500px;
   overflow: hidden;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.4s ease-in;
+}
+
+.button {
+  transition: transform 0.38s ease-in-out;
 }
 
 .rotate-own {
   transform: rotate(90deg);
-  transition: transform 0.3s ease-in-out;
 }
 
 .reset-rotate-owm{
@@ -874,4 +871,3 @@ video {
 .hover\:cursor-e-resize:hover {
   cursor: e-resize;
 }
-
