@@ -7,6 +7,10 @@
     background: #DED8CB;
 }
 
+.bg-own2{
+    background: #15857A;
+}
+
 .main-color{
     color: #15857A;
 }
@@ -16,7 +20,7 @@
 }
 
 .h1-own{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     font-family: Stardos Stencil, sans-serif;
     color: #303030;
@@ -25,7 +29,7 @@
 }
 
 .h2-own{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: BioRhyme Expanded , sans-serif;
     text-transform: uppercase;
@@ -51,7 +55,7 @@
 }
 
 .p-own{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: lighter;
     font-family: Archivo , sans-serif;
     color: #303030;
@@ -59,6 +63,10 @@
 
 .border-color-own{
     border-color: #15857A;
+}
+
+.border-color-own2{
+    border-color: #303030;
 }
 
 .shadow-own{
@@ -92,4 +100,25 @@
     height: 350px;
 }
 
+.hidden-own {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.visible-own {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+}
+
+.rotate-own {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.reset-rotate-owm{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
 

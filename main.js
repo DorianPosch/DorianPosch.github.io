@@ -19,17 +19,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 //Navbar Events
+    const toggleSection = (button, section) => {
+        if (section.classList.contains("hidden-own")) {
+            section.classList.remove("hidden-own");
+            section.classList.add("visible-own");
+            button.classList.add("rotate-own");
+        } else {
+            section.classList.remove("visible-own");
+            section.classList.add("hidden-own");
+            button.classList.remove("rotate-own");
+        }
+    };
+
     let bt1Container = document.getElementById("bt1-container");
     let bt1 = document.getElementById("bt1");
     let projects = document.getElementById("projects");
 
     if (bt1 && projects) {
-        bt1Container.addEventListener("click", () => {
-            projects.classList.toggle("hidden");
-            bt1.classList.toggle("rotate-90");
-        });
-    } else {
-        console.error("Element mit ID 'bt1' oder 'projects' wurde nicht gefunden.");
+        bt1Container.addEventListener("click", () => toggleSection(bt1, projects));
     }
 
     let bt2Container = document.getElementById("bt2-container");
@@ -37,12 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let aboutMe = document.getElementById("about");
 
     if (bt2 && aboutMe) {
-        bt2Container.addEventListener("click", () => {
-            aboutMe.classList.toggle("hidden");
-            bt2.classList.toggle("rotate-90");
-        });
-    } else {
-        console.error("Element mit ID 'bt1' oder 'projects' wurde nicht gefunden.");
+        bt2Container.addEventListener("click", () => toggleSection(bt2, aboutMe));
     }
 
     let bt3Container = document.getElementById("bt3-container");
@@ -50,11 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let experience = document.getElementById("experience");
 
     if (bt3 && experience) {
-        bt3Container.addEventListener("click", () => {
-            experience.classList.toggle("hidden");
-            bt3.classList.toggle("rotate-90");
-        });
-    } else {
-        console.error("Element mit ID 'bt1' oder 'projects' wurde nicht gefunden.");
+        bt3Container.addEventListener("click", () => toggleSection(bt3, experience));
     }
+
+
 });
