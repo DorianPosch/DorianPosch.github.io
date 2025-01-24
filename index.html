@@ -2,6 +2,7 @@
         <html lang="en">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Portfolio</title>
             <link rel="stylesheet" href="output.css">
             <script src="main.js"></script>
@@ -10,7 +11,7 @@
             <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
         </head>
         <body class="bg-own">
-        <header class="flex justify-end h-20">
+        <header class="header flex justify-end h-20">
             <h3 id="links-headline" class="mr-12 mt-10 h3-own hover:cursor-e-resize">contact and insights</h3>
             <div id="link-icons" class="flex items-center mr-20">
                 <a class=" ml-5 mr-5 cursor-pointer"><img src="/imgs/Insta%20icon.svg" alt="Instagram-link"></a>
@@ -20,17 +21,17 @@
             </div>
         </header>
         <main class="mb-20">
-            <div class="container ml-32 mt-20">
+            <div class="main-div flex ml-32 mt-20">
                 <div class="main pb-32 -mt-20">
                     <h1 class="h1-own">Dorian Posch<br><span class="main-color">Portfolio</span></h1>
-                    <div class="flex ml-28 mt-20">
-                        <div class="flex min-w-96">
+                    <div class="main-div flex ml-28 mt-20 gap-20">
+                        <div class="flex">
                             <img class="div-rounded-own object-cover z-10 negative-m shadow-xl" src="/imgs/Photo.jpg" alt="Photo of me">
                             <div class="div-rounded-own z-0 accent-color"></div>
                         </div>
                         <div>
                             <h2 class="h2-own mb-10">Introduction:</h2>
-                            <p class="p-own">
+                            <p class="p-own flex">
                                 Hallo, ich bin Dorian – schön, dass du hier bist!<br>
                                 Digitale Produkte und Medien sind wichtiger denn je, und ich möchte meinen Beitrag leisten, um etwas zu bewirken.
                                 <br>
@@ -47,9 +48,10 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col navbar border-l-4 border-color-own ml-16 cursor-pointer">
+                <div class="flex-1"></div>
+                <div class="flex flex-col navbar border-l-4 border-color-own ml-16 right-20 absolute">
                     <h3 class="h3-own ml-5">further information</h3>
-                    <div id="bt1-container" class="flex mt-5 drop-container">
+                    <div id="bt1-container" class="flex mt-5 drop-container cursor-pointer">
                         <button id="bt1" class="button ml-6"><img src="/imgs/Polygon.svg"></button>
                         <h4 class="h4-own ml-2">Projects</h4>
                     </div>
