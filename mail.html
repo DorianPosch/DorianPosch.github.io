@@ -9,11 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-own">
-<header>
-    <a href="index.html" class="h4-own mt-5 ml-5">
+<header class="header flex justify-end h-20">
+    <a href="index.html" class="h4-own ml-12">
         <span class="main-color"><</span> back
     </a>
-    <h2 class="h2-own text-center">Schreib mir eine E-Mail</h2>
+    <div class="flex-1"></div>
+    <h3 id="links-headline" class="mr-12 mt-10 h3-own hover:cursor-e-resize">contact and insights</h3>
+    <div id="link-icons" class="flex items-center mr-20">
+        <a href="https://www.instagram.com/dorian_posch" class="transition duration-200 ml-5 mr-5 cursor-pointer"><img class="transition duration-200 ease-in-out hover:scale-110" src="/imgs/Insta%20icon.svg" alt="Instagram-link"></a>
+        <a class="transition duration-200 delay-own mr-5 cursor-pointer"><img class="transition duration-200 ease-in-out hover:scale-110" src="/imgs/LinkedIn%20icon.svg" alt="LinkedIn-link"></a>
+        <a href="https://github.com/DorianPosch" class="transition duration-200 delay-own2 mr-5 cursor-pointer"><img class="transition duration-200 ease-in-out hover:scale-110" src="/imgs/brand-github%201.svg" alt="Github-link"></a>
+        <a href="mail.html" class="transition duration-200 mr-5 delay-own3 cursor-pointer"><img class="transition duration-200 ease-in-out hover:scale-110" src="/imgs/Mail%20icon.svg" alt="E-Mail-link"></a>
+    </div>
 </header>
 <form id="emailForm" class="mt-16">
     <label for="email" class="mb-5 h3-own">E-Mail:</label>
