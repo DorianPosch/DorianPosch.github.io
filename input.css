@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
 
 .bg-own{
     background: #DED8CB;
@@ -105,7 +109,7 @@
 }
 
 
-.navbar {
+.navbar-own {
     height: 90%;
     max-height: 700px;
 }
@@ -120,6 +124,13 @@
     background: #C9654D;
     width: 250px;
     height: 350px;
+}
+
+.div-rounded-own2{
+    border-radius: 30px;
+    background: #C9654D;
+    width: 250px;
+    height: 400px;
 }
 
 .hidden-own {
@@ -149,10 +160,80 @@
 
 .center-container {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90%;
+}
+
+input{
+    width: 300px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: solid #15857A 2px;
+}
+
+textarea{
+    width: 300px;
+    border-radius: 5px;
+}
+
+textarea:focus{
+    outline: solid #15857A 2px;
+}
+
+form{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.senden{
+    border-radius: 5px;
+    color: #303030;
+    width: 75px;
+    margin-bottom: 400px;
+}
+
+.font-bold-own{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Archivo , sans-serif;
+    color: #303030;
+    max-width: 450px;
+}
+
+.about-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.personal{
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    gap: 200px;
+}
+
+
+.moodboard{
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.moodboard-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 1px solid #15857A;
 }
 
 @media (max-width: 1400px) {
@@ -191,6 +272,29 @@
     }
 
 
+}
+
+.height{
+    min-height: 120px;
+}
+
+.delay-own {
+    transition-delay: 50ms;
+}
+
+.delay-own2 {
+    transition-delay: 100ms;
+}
+
+.delay-own3 {
+    transition-delay: 150ms;
+}
+
+.plans{
+    border: 2px solid #15857A;
+    border-radius: 32px;
+    display: flex;
+    gap: 40px;
 }
 
 @media (max-width: 768px) {

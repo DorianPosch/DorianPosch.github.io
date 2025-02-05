@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+  <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-own">
+<header>
+    <a href="index.html" class="h4-own mt-5 ml-5">
+        <span class="main-color"><</span> back
+    </a>
+    <h2 class="h2-own text-center">Schreib mir eine E-Mail</h2>
+</header>
+<form id="emailForm" class="mt-16">
+    <label for="email" class="mb-5 h3-own">E-Mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message" class="h3-own">Nachricht:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit" class="bg-own2 senden">Senden</button>
+</form>
+<script src="mail.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+</html>

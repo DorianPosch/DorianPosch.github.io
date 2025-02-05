@@ -1,19 +1,25 @@
 //LinkIcons Event
 document.addEventListener("DOMContentLoaded", () => {
     let linksHeadline = document.getElementById("links-headline");
-    let icons = document.getElementsByTagName("a");
+    let icons = document.getElementById("link-icons")?.getElementsByTagName("a");
+    let isAnimating = false;
+
     if (icons) {
         linksHeadline.addEventListener("mouseover", () => {
-            for(let icon of icons) {
-                icon.classList.add("drop-shadow-lg");
-                icon.classList.add("drop-shadow-green-950");
+            if (isAnimating) return;
+            isAnimating = true;
+            for (let i = 0; i < icons.length; i++) {
+                setTimeout(() => {
+                    icons[i].classList.add("-translate-y-2");
+                }, i * 20);
+                setTimeout(() => {
+                    icons[i].classList.remove("-translate-y-2");
+                }, 300 + i * 20);
             }
+            setTimeout(() => {
+                isAnimating = false;
+            }, 300 + icons.length * 20);
         });
-        linksHeadline.addEventListener("mouseout", () => {
-            for(let icon of icons) {
-                icon.classList.remove("drop-shadow-lg");
-            }
-        })
     } else {
         console.error("Element mit ID 'link-icons' wurde nicht gefunden.");
     }
@@ -54,6 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (bt3 && experience) {
         bt3Container.addEventListener("click", () => toggleSection(bt3, experience));
     }
-
 
 });

@@ -662,6 +662,11 @@ video {
   flex: 1 1 0%;
 }
 
+.-translate-y-2 {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -699,19 +704,31 @@ video {
   text-align: center;
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body{
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.4);
+  height: 100%;
 }
 
 .bg-own{
@@ -815,7 +832,7 @@ video {
   border-color: #303030;
 }
 
-.navbar {
+.navbar-own {
   height: 90%;
   max-height: 700px;
 }
@@ -830,6 +847,13 @@ video {
   background: #C9654D;
   width: 250px;
   height: 350px;
+}
+
+.div-rounded-own2{
+  border-radius: 30px;
+  background: #C9654D;
+  width: 250px;
+  height: 400px;
 }
 
 .hidden-own {
@@ -859,10 +883,79 @@ video {
 
 .center-container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90%;
+}
+
+input{
+  width: 300px;
+  border-radius: 5px;
+}
+
+input:focus{
+  outline: solid #15857A 2px;
+}
+
+textarea{
+  width: 300px;
+  border-radius: 5px;
+}
+
+textarea:focus{
+  outline: solid #15857A 2px;
+}
+
+form{
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.senden{
+  border-radius: 5px;
+  color: #303030;
+  width: 75px;
+  margin-bottom: 400px;
+}
+
+.font-bold-own{
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Archivo , sans-serif;
+  color: #303030;
+  max-width: 450px;
+}
+
+.about-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.personal{
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  gap: 200px;
+}
+
+.moodboard{
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.moodboard-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border: 1px solid #15857A;
 }
 
 @media (max-width: 1400px) {
@@ -899,6 +992,29 @@ video {
     color: #303030;
     max-width: 300px;
   }
+}
+
+.height{
+  min-height: 120px;
+}
+
+.delay-own {
+  transition-delay: 50ms;
+}
+
+.delay-own2 {
+  transition-delay: 100ms;
+}
+
+.delay-own3 {
+  transition-delay: 150ms;
+}
+
+.plans{
+  border: 2px solid #15857A;
+  border-radius: 32px;
+  display: flex;
+  gap: 40px;
 }
 
 @media (max-width: 768px) {
@@ -974,6 +1090,20 @@ video {
   }
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:cursor-e-resize:hover {
   cursor: e-resize;
+}
+
+.hover\:font-normal:hover {
+  font-weight: 400;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
